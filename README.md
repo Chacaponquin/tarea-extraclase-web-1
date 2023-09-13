@@ -2,7 +2,12 @@
 
 # 🧑‍🦰 Proyecto Humberto
 
-Proyecto dedicado a intentar sacar 5 en el primera tarea extraclase de web y que el compañero José no arme drama desde el inicio del semestre.
+## 😀 Objetivos
+
+- Intentar sacar 5 en el primera tarea extraclase de web y que el compañero José no arme drama desde el inicio del semestre.
+
+- Rendir tributo a Amaya que ahora mismo debe estar haciendo este baile por no tener que estar dando esta asignatura
+<p align="center"><img align="center" src="https://res.cloudinary.com/chaca-sa/image/upload/v1682915008/95bc112f-b9d9-44f9-9a29-b8157a92506f_jmkats.webp" style="width: 300px"/></p>
 
 ## 👨‍⚕️ Cosas a hacer en beneficio de la salud mental de los integrantes
 
