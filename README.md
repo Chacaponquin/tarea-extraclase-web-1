@@ -63,14 +63,15 @@ A continuación se presentan las tareas sexys que tiene que hacer cada uno.
 ### 🧑‍⚕️ José
 
 - ⭕ Querer a Baster
-- ⭕ Añadir validaciones a cada uno de los campos del formulario tanto a nivel de html
+- ⭕ Crear el formulario, validaciones de la entidad Coach
 
 ### 🍅 Alejo
 
 - ⭕ Querer a Baster
-- ⭕ Poner todos los campos del formulario en el html. **(No ponerle los atributos de validaciones)**
+- ⭕ Crear el formulario, validaciones de la entidad Pitcher
 
 ### 🐵 Héctor
 
-- ⭕ Querer a Baster
-- ⭕ Crear la sección de botones y poner los estilos del formulario en el CSS
+- ✅ Querer a Baster
+- ⭕ Crear el formulario, validaciones de la entidad Batter
+- ⭕ Crear las clases de CSS para los elementos del formulario
