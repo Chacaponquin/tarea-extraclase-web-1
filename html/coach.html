@@ -5,17 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coach Form</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel = "shortcut icon" type="imagen/x-icon" href="../images/icon.ico">
     <script src="../js/main.js"></script>
   </head>
   <body>
     <main>
       <form action="" method="post">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-
-        <section class="form-buttons"></section>
+        <h1>Insertar entrenador</h1>
+        <section> 
+          <label for="input-name">Nombre:</label>
+          <input type="text" class="input-name" id="input-name">
+        </section>
+        <section>
+          <label for="select-team">Equipo:</label>
+          <select class="select-team" id="select-team">
+            <option value="Pinar del Rio">Pinar del Río</option>
+            <option value="Artemisa">Artemisa</option>
+            <option value="Isla de la Juventud">Isla de la Juventud</option>
+            <option value="La Habana">La Habana</option>
+            <option value="Mayabeque">Mayabeque</option>
+            <option value="Matanzas">Matanzas</option>
+            <option value="Villa Clara">Villa Clara</option>
+            <option value="Cienfuegos">Cienfuegos</option>
+            <option value="Sancti Spíritus">Sancti Spíritus</option>
+            <option value="Ciego de Ávila">Ciego de Ávila</option>
+            <option value="">Camaguey</option>
+            <option value="">Holguín</option>
+            <option value="">Las Tunas</option>
+            <option value="">Granma</option>
+            <option value="">Santiago de Cuba</option>
+            <option value="">Guantánamo</option>
+          </select>
+        </section>
+        <section>
+          <label for="input-number">Dorsal:</label>
+          <input type="number" class="input-number" class="input-number">
+        </section>
+        <section>
+          <label for="input-years">Años de experiencia:</label>
+          <input type="number" class="input-years" class="input-years">
+        </section>
+        <section class="form-buttons">
+          <input type="submit" class="input-submit" id="input-submit" value="Insertar">
+          <button type="reset" class="button-reset" id="button-reset">Limpiar</button>
+        </section>
       </form>
     </main>
   </body>
