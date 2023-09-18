@@ -14,10 +14,13 @@ main {
 }
 
 form {
-  padding: 3rem 5rem;
+  padding: 1.5rem 3rem;
   border-radius: 10px;
   display: flex;
+  max-width: 500px;
+  width: 100%;
   flex-direction: column;
+  gap: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -27,5 +30,42 @@ section {
   gap: 0 10px;
 }
 
+label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .form-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 0.2rem 0.5rem;
+}
+
+select {
+  width: 100%;
+}
+
+button {
+  padding: 0.2rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: blue;
+}
+
+button:hover {
+  opacity: 0.7;
 }
