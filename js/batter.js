@@ -21,6 +21,7 @@ const PROVINCES = [
 window.onload = () => {
   const teamSelect = document.getElementById("team-select");
   const posSelect = document.getElementById("position-select");
+  const dorsalInput = document.getElementById("batter-dorsal");
 
   for (const province of PROVINCES) {
     const option = document.createElement("option");
@@ -35,4 +36,6 @@ window.onload = () => {
     option.text = position;
     posSelect.appendChild(option);
   }
+
+  dorsalInput.setAttribute("value", 1);
 };
