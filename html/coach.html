@@ -11,41 +11,42 @@
     <main>
       <form action="" method="post">
         <h1>Insertar entrenador</h1>
-        <section> 
+
+        <section>
           <label for="input-name">Nombre:</label>
-          <input type="text" class="input-name" id="input-name">
+          <input type="text" class="input-name" id="input-name" required />
         </section>
         <section>
           <label for="select-team">Equipo:</label>
-          <select class="select-team" id="select-team">
-            <option value="Pinar del Rio">Pinar del Río</option>
-            <option value="Artemisa">Artemisa</option>
-            <option value="Isla de la Juventud">Isla de la Juventud</option>
-            <option value="La Habana">La Habana</option>
-            <option value="Mayabeque">Mayabeque</option>
-            <option value="Matanzas">Matanzas</option>
-            <option value="Villa Clara">Villa Clara</option>
-            <option value="Cienfuegos">Cienfuegos</option>
-            <option value="Sancti Spíritus">Sancti Spíritus</option>
-            <option value="Ciego de Ávila">Ciego de Ávila</option>
-            <option value="">Camaguey</option>
-            <option value="">Holguín</option>
-            <option value="">Las Tunas</option>
-            <option value="">Granma</option>
-            <option value="">Santiago de Cuba</option>
-            <option value="">Guantánamo</option>
-          </select>
+          <select class="select-team" id="select-team"></select>
         </section>
         <section>
           <label for="input-number">Dorsal:</label>
-          <input type="number" class="input-number" class="input-number">
+          <input
+            type="number"
+            class="input-number"
+            class="input-number"
+            id="coach-dorsal"
+            required
+          />
         </section>
         <section>
           <label for="input-years">Años de experiencia:</label>
-          <input type="number" class="input-years" class="input-years">
+          <input
+            type="number"
+            class="input-years"
+            id="coach-experience"
+            required
+            min="0"
+            max="60"
+          />
         </section>
         <section class="form-buttons">
+<<<<<<< HEAD
           <button type="submit">Crear</button>
+=======
+          <button type="submit">Insertar</button>
+>>>>>>> cd2932945474ddef2cdf361ee0305ad5752bd9ff
           <button type="reset">Limpiar</button>
         </section>
       </form>
