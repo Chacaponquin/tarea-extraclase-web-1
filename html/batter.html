@@ -4,18 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coach Form</title>
+
     <link rel="stylesheet" href="../css/index.css" />
-    <script src="../js/main.js"></script>
+
+    <script src="../js/batter.js"></script>
   </head>
   <body>
     <main>
       <form action="" method="post">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+          <label for="batter-name">Nombre:</label>
+          <input type="text" id="batter-name" name="batter-name" />
+        </section>
 
-        <section class="form-buttons"></section>
+        <section>
+          <label for="team-select">Equipo:</label>
+          <select name="team-select" id="team-select"></select>
+        </section>
+
+        <section>
+          <label for="batter-dorsal">Dorsal:</label>
+          <input
+            type="number"
+            name="batter-dorsal"
+            id="batter-dorsal"
+            min="1"
+            max="99"
+          />
+        </section>
+
+        <section>
+          <label for="position-select">Posición:</label>
+          <select name="position-select" id="position-select"></select>
+        </section>
+
+        <section class="form-buttons">
+          <button type="submit">Crear</button>
+          <button type="reset">Limpiar</button>
+        </section>
       </form>
     </main>
   </body>

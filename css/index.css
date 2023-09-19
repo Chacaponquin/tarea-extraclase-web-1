@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,14 +13,27 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: url(../images/login_2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 form {
-  padding: 3rem 5rem;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
   border-radius: 10px;
   display: flex;
+  max-width: 500px;
+  width: 100%;
   flex-direction: column;
+  gap: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 
 section {
@@ -27,5 +42,49 @@ section {
   gap: 0 10px;
 }
 
+label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .form-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.2rem 0.5rem;
+}
+
+select {
+  width: 100%;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  font-weight: 700;
+  border-radius: 0.1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button[type="reset"] {
+  background-color: var(--gray-color);
+  color: white;
 }
