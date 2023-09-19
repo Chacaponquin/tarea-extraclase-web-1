@@ -13,14 +13,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/5.jpg);
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /*background: #4ca1af; /* fallback for old browsers */
-  /*background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to right, #4ca1af, #c4e0e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca1af, #c4e0e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form {
