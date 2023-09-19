@@ -36,6 +36,11 @@ form {
   background-color: white;
 }
 
+form > h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 section {
   display: grid;
   grid-template-columns: 200px 1fr;
