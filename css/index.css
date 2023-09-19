@@ -14,27 +14,20 @@ main {
   justify-content: center;
   align-items: center;
 
-  background: -webkit-linear-gradient(
-    45deg,
-    #0083b0,
-    #00b4db
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    45deg,
-    #0083b0,
-    #00b4db
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca1af, #c4e0e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form {
   position: relative;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-bottom: 1rem;
   border-radius: 10px;
   display: flex;
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
   border-radius: 5px;
   flex-direction: column;
@@ -45,7 +38,7 @@ form {
 
 form > h1 {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: var(--strong-color);
   font-size: 1.8rem;
 }
@@ -59,7 +52,7 @@ section {
 
 label {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .form-buttons {
@@ -84,18 +77,21 @@ select {
 }
 
 input[type="text"]:focus,
-input[type="number"]:focus {
+input[type="number"]:focus,
+select:focus {
   border-bottom: 2px solid var(--primary-color);
 }
 
 select {
   width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 button {
   padding: 0.4rem 1rem;
-  font-weight: 600;
-  border-radius: 0.1rem;
+  font-weight: 500;
+  border-radius: 5px;
   font-size: 1rem;
   width: max-content;
   transition: all 0.3s ease;
