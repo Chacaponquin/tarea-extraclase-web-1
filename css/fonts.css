@@ -10,6 +10,21 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("./fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  src: url("./fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -36,4 +51,8 @@
 }
 .icon-eye-blocked:before {
   content: "\e9d1";
+}
+
+* {
+  font-family: "Poppins Regular";
 }
