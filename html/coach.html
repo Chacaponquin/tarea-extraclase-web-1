@@ -14,7 +14,7 @@
 
         <section>
           <label for="input-name">Nombre:</label>
-          <input type="text" class="input-name" id="input-name" />
+          <input type="text" class="input-name" id="input-name" required />
         </section>
         <section>
           <label for="select-team">Equipo:</label>
@@ -27,11 +27,17 @@
             class="input-number"
             class="input-number"
             id="coach-dorsal"
+            required
           />
         </section>
         <section>
           <label for="input-years">Años de experiencia:</label>
-          <input type="number" class="input-years" id="coach-experience" />
+          <input
+            type="number"
+            class="input-years"
+            id="coach-experience"
+            required
+          />
         </section>
         <section class="form-buttons">
           <button type="submit">Insertar</button>
