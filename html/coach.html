@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insertar entrenador</title>
     <link rel="stylesheet" href="../css/index.css" />
+
     <script src="../js/coach.js"></script>
   </head>
   <body>
@@ -13,22 +14,34 @@
         <h1>Insertar entrenador</h1>
         <section>
           <label for="input-name">Nombre:</label>
-          <input type="text" class="input-name" id="input-name" required />
-          <p id="form_input-error" class="form_input-error">El nombre debe estar formado por letras y espacios. Debe tener entre 4 y 50 caracteres.</p>
+          <input
+            type="text"
+            class="input-name"
+            id="input-name"
+            required
+            min="4"
+            max="50"
+            pattern="/^[a-zA-ZÀ-ÿ\s]{4,50}$/"
+          />
         </section>
+
         <section>
           <label for="select-team">Equipo:</label>
           <select class="select-team" id="select-team"></select>
         </section>
+
         <section>
           <label for="input-number">Dorsal:</label>
           <input
             type="number"
             class="input-number"
             id="coach-dorsal"
+            min="1"
+            max="99"
             required
           />
         </section>
+
         <section>
           <label for="input-years">Años de experiencia:</label>
           <input
@@ -40,6 +53,7 @@
             max="60"
           />
         </section>
+
         <section class="form-buttons">
           <button type="submit">Insertar</button>
           <button type="reset">Limpiar</button>

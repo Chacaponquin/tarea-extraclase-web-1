@@ -13,9 +13,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--background-1-color); /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,var(--background-1-color) , var(--background-2-color)); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, var(--background-1-color), var(--background-2-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--background-1-color);
+  background: -webkit-linear-gradient(
+    to right,
+    var(--background-1-color),
+    var(--background-2-color)
+  );
+  background: linear-gradient(
+    to right,
+    var(--background-1-color),
+    var(--background-2-color)
+  );
 }
 
 form {
@@ -52,7 +60,7 @@ section {
 
 label {
   font-weight: 700;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .form-buttons {
@@ -66,9 +74,8 @@ input {
   width: 100%;
 }
 
-.input-name,
-.input-number,
-.input-years,
+input[type="text"],
+input[type="number"],
 select {
   padding: 0.2rem 0.5rem;
   border: none;
@@ -77,9 +84,8 @@ select {
   background: transparent;
 }
 
-.input-name:focus,
-.input-number:focus,
-.input-years:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
 select:focus {
   border-bottom: 2px solid var(--primary-color);
 }
@@ -111,24 +117,4 @@ button:hover {
 button[type="reset"] {
   background-color: var(--gray-color);
   color: white;
-}
-
-.form_input-error {
-	display: none;
-}
-
-.input-name-error {
-  padding: 0.2rem 0.5rem;
-  border: none;
-  outline: none;;
-  background: transparent;
-  border-bottom: 2px solid var(--error-color);
-}
-
-.formulario_input-error-active {
-  font-size: 12px;
-  text-align: justify;
-	margin-bottom: 0;
-	display: block;
-  color: var(--error-color);
 }
