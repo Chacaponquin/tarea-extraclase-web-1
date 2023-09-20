@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -28,7 +30,7 @@ body:before {
   width: 340px;
   height: 315px;
   background: rgba(255, 255, 255, 0.7);
-  color: #1b63ca;
+  color: var(--primary-color);
   top: 50%;
   left: 50%;
   position: absolute;
@@ -61,25 +63,25 @@ input {
 
 .input_i {
   border: none;
-  border-bottom: 1px solid #0f46df;
+  border-bottom: 1px solid var(--primary-color);
   background: transparent;
   outline: none;
   height: 40px;
-  color: #2d4571;
+  color: var(--login-color);
   font-size: 16px;
 }
 
 .input_i:hover {
-  border-bottom: 1px solid #00399e;
+  border-bottom: 1px solid var(--second-color);
 }
 
 .input_i::placeholder {
-  color: #2d4571;
+  color: var(--login-color);
 }
 
 .icon {
   font-size: 20px;
-  color: #1b63ca;
+  color: var(--primary-color);
   position: relative;
   top: 5px;
   left: -5px;
@@ -89,7 +91,7 @@ input {
   border: none;
   outline: none;
   height: 40px;
-  background: #1b63ca;
+  background: var(--primary-color);
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
@@ -100,6 +102,5 @@ input {
 
 .input_s:hover {
   cursor: pointer;
-  background: #064db1;
-  color: #fff;
+  opacity: 0.8;
 }
