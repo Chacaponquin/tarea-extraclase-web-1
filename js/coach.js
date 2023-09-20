@@ -17,27 +17,26 @@ const PROVINCES = [
   "Ciego de Avila",
 ];
 
-const expresion_name = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+const expression_name = /^[a-zA-ZÀ-ÿ\s]{4,50}$/;
 
 window.onload = () => {
   const teamSelect = document.getElementById("select-team");
   const dorsalInput = document.getElementById("coach-dorsal");
   const experienceInput = document.getElementById("coach-experience");
   const nameInput = document.getElementById("input-name");
-  const formMns = document.getElementById("form_input-error");
+  const form_menssage = document.getElementById("form_input-error");
 
   const validateForm = (e) =>{
-      if(expresion_name.test(e.target.value)){
+      if(expression_name.test(e.target.value)){
         nameInput.classList.remove('input-name-error');
         nameInput.classList.add('input-name');
-        formMns.classList.remove('formulario_input-error-active');
-        formMns.classList.add('form_input-error');
+        form_menssage.classList.remove('formulario_input-error-active');
+        form_menssage.classList.add('form_input-error');
       }else{
-        console.log("AAAAA");
         nameInput.classList.remove('input-name');
         nameInput.classList.add('input-name-error');
-        formMns.classList.remove('form_input-error');
-        formMns.classList.add('formulario_input-error-active');
+        form_menssage.classList.remove('form_input-error');
+        form_menssage.classList.add('formulario_input-error-active');
       }
   };
 
