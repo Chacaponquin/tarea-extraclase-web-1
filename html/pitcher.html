@@ -11,9 +11,25 @@
   <body>
     <main>
       <form action="" method="post">
-        <section></section>
-        <section></section>
-        <section></section>
+        <h1>Insertar lanzador</h1>
+
+        <section>
+          <label for="input-name">Nombre:</label>
+          <input
+            type="text"
+            id="input-name"
+            required
+            min="4"
+            max="50"
+            pattern="/^[a-zA-ZÀ-ÿ\s]{4,50}$/"
+          />
+        </section>
+
+        <section>
+          <label for="select-team">Equipo:</label>
+          <select class="select-team" id="select-team"></select>
+        </section>
+
         <section></section>
 
         <section class="form-buttons">
