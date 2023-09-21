@@ -19,6 +19,7 @@ const PROVINCES = [
 
 window.onload = () => {
   const teamSelect = document.getElementById("select-team");
+  const dorsalInput = document.getElementById("pitcher-dorsal");
 
   for (const province of PROVINCES) {
     const option = document.createElement("option");
@@ -26,4 +27,6 @@ window.onload = () => {
     option.text = province;
     teamSelect.appendChild(option);
   }
+
+  dorsalInput.setAttribute("value", "1");
 };

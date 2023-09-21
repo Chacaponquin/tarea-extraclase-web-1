@@ -14,10 +14,10 @@
         <h1>Insertar lanzador</h1>
 
         <section>
-          <label for="input-name">Nombre:</label>
+          <label for="pitcher-name">Nombre:</label>
           <input
             type="text"
-            id="input-name"
+            id="picther-name"
             required
             min="4"
             max="50"
@@ -30,7 +30,18 @@
           <select class="select-team" id="select-team"></select>
         </section>
 
-        <section></section>
+        <section>
+          <label for="pitcher-dorsal">Dorsal:</label>
+          <input
+            required
+            type="number"
+            name="pitcher-dorsal"
+            id="pitcher-dorsal"
+            min="1"
+            max="99"
+            class="input-number"
+          />
+        </section>
 
         <section class="form-buttons">
           <button type="submit">Insertar</button>
